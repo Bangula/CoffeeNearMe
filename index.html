@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Emisia project - Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="near, me, places, nearme, coffee, restaurant, hotel, gas, station">
+    <meta name="description" content="Coffee near me">
+    <meta name="author" content="Vukovic Branko">
+    <link type="text/css" rel="stylesheet" href="stylesheets/style.css">
+
+
+</head>
+
+<body>
+
+    <div id="wraper">
+        <div id="loader"></div>
+    </div>
+
+    <img id="toTop" src="images/back_on_top.png" alt="backtotop image" onclick="backToTop()" title="Back to top!">
+    
+    
+    <div id="main" class="main">
+                
+        <header>
+            
+            <img id="navButton" src="images/side-menu.png" alt="responsive menu icon">
+            <div id="logo">
+                <a href="index.html">
+                    <h1>CoffeeNearMe</h1>
+                </a>
+                <img src="images/coffee-cup-md.png" alt="coffee cup">
+            </div>
+
+            <nav>
+                <div id="nw1" class="active"><a id="a1" href="index.html#main" onmouseover="navWrapOver(event)" onmouseout="navWrapOut(event)">Home</a></div>
+                <div id="nw2"><a id="a2" href="about.html" onmouseover="navWrapOver(event)" onmouseout="navWrapOut(event)">About</a></div>
+                <div id="nw3"><a id="a3" href="contact.html" onmouseover="navWrapOver(event)" onmouseout="navWrapOut(event)">Contact</a></div>
+            </nav>
+        </header>
+        
+        <div id="respNav">
+            <a href="index.html#main">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>  
+        
+        <div id="clientAdress">
+            <p id="currentAdress"></p>
+            <p id="writeAdress"></p>
+        </div>
+        <div class="container">
+            <div id="header1">
+                <p id="par1">Need coffee urgently?</p>
+                <p id="par2">We will help you find one.</p>
+                <p id="par3">Get the list of nearby venues with a single click.</p>
+
+            </div>
+            <div id="radius">
+                <form>
+                    In radius of:
+                    <input type="radio" name="radius" value="1000">1km
+                    <input type="radio" name="radius" value="5000" checked>5km
+                    <input type="radio" name="radius" value="10000">10km
+                </form>
+            </div>
+            <div id="places">
+
+                <div class="place" id="coffee"><a href="#"><img  src="images/coffee-shop2.jpg" alt="coffee shops">
+
+                        <p>Coffee Shops</p></a>
+
+                </div>
+
+                <div class="place" id="restaurants"><a href="#"><img  src="images/restaurant.jpg" alt="restaurant">
+
+                        <p>Restaurants</p></a>
+
+                </div>
+
+                <div class="place" id="hotel"><a href="#"><img src="images/hotel.jpg" alt="hotel">
+
+                        <p>Hotels</p></a>
+
+                </div>
+                <div class="place" id="gas"><a href="#"><img src="images/gas-station.jpg" alt="gas station">
+
+                        <p>Gas Stations</p></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="result">
+        <div id="container" class="container">
+
+            <h2 id="resultH2">List of searched places based on your location:</h2>
+            <div id="list">
+                <div class="item">
+                    
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="remButton">
+            <button id="remMarkers" onclick="createMap()">Refresh Map</button>
+        </div>
+        <div id="map">
+        </div>
+
+    </div>
+
+    <div id="facts">
+        <div class="container">
+            <h1>Interesting Facts About Coffee</h1>
+            <div id="section1">
+                <p><span>1.</span> Shepherds discovered coffee in Ethiopia circa 800 A.D. Legend has it that 9th century goat herders noticed the effect caffeine had on their goats, who appeared to "dance" after eating coffee berries. A local monk then made a drink with coffee berries and found that it kept him awake at night, thus the original cup of coffee was born.</p>
+                <p><span>2.</span> Coffee is the second most traded commodity on earth. According to the Global Exchange, there are approximately 25 million farmers in over 50 countries involved in producing coffee. The number one commodity? Oil.</p>
+                <p><span>3.</span> In Italian espresso means "when something is forced out." This refers to the way espresso is made — forcing boiling water through pressed coffee grounds. And, although espresso has more caffeine per volume than coffee, because it's consumed in smaller quantities, it actually has about a third of the amount of caffeine as a regular cup of coffee.
+                </p>
+            </div>
+            <div id="section2">
+                <div id="section2-1">
+                    <p><span>4.</span> Coffee was the first food to be freeze-dried. The process of freeze drying — when fresh foods are placed in a dryer where temperatures drop to negative 40 degrees F — first started during World War II to preserve foods.</p>
+                    <p><span>5.</span> There are two types of coffee beans: Arabica and Robusta. Seventy percent of coffee beans are Arabica. Although less popular, Robusta is slightly more bitter and has twice as much caffeine.</p>
+                </div>
+                <div id="section2-2">
+                    <p>The Production Trail of coffee</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GAfd9Q5ACFc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+                </div>
+                
+
+            </div>
+            <div id="section3">
+                <div class="field"><img src="images/coffee/coffee1.jpg" alt="coffee fields"></div>
+                <div class="field"><img src="images/coffee/coffee2.jpg" alt="coffee fields"></div>
+                <div class="field"><img src="images/coffee/coffee3.jpg" alt="coffee fields"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="footer">
+        <div id="footer-nav">
+            <a href="index.html#main">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p id="copy">Copyright©2017 Vukovic Branko.All rights reserved.Designed By Vukovic Branko.</p>
+    </footer>
+
+    <div id="iframeDiv">
+        <div id="imgWrap"><img id="close" onclick="closeIframe()" src="images/close-button.png" alt="close button"></div>
+
+        <iframe id="iframe_id" name="imgFrame" scrolling="auto">
+           </iframe>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaMfxx125qpDcCXkY96DgEHsZTVPVKnY8" async defer></script>
+    <script src="javascripts/main.js"></script>
+</body>
+
+</html>

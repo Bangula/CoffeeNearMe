@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Emisia project - Abote page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="near, me, places, nearme, coffee, restaurant, hotel, gas, station">
+    <meta name="description" content="Coffee near me">
+    <meta name="author" content="Vukovic Branko">
+    <link type="text/css" rel="stylesheet" href="stylesheets/style.css">
+
+
+</head>
+
+<body>
+
+    <div id="wraper">
+        <div id="loader"></div>
+    </div>
+
+    <img id="toTop" src="images/back_on_top.png" alt="backtotop image" onclick="backToTop()" title="Back to top!">
+
+    <div id="main-about" class="main">
+        <header>
+            
+            <img id="navButton" src="images/side-menu.png" alt="responsive menu icon">
+            <div id="logo">
+                <a href="index.html">
+                    <h1>CoffeeNearMe</h1>
+                </a>
+                <img src="images/coffee-cup-md.png" alt="coffee cup">
+            </div>
+
+            <nav>
+                <div id="nw1"><a id="a1" href="index.html#main" onmouseover="navWrapOver(event)" onmouseout="navWrapOut(event)">Home</a></div>
+                <div id="nw2" class="active"><a id="a2" href="about.html" onmouseover="navWrapOver(event)" onmouseout="navWrapOut(event)">About</a></div>
+                <div id="nw3"><a id="a3" href="contact.html" onmouseover="navWrapOver(event)" onmouseout="navWrapOut(event)">Contact</a></div>
+            </nav>
+        </header>
+        
+        <div id="respNav">
+            <a href="index.html#main">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div id="content">
+            <div class="container">
+                <div id="section-1">
+                    <h2 id="header">About App...</h2>
+                    <p>- The main function of this app is to help you find the nearest coffee shop or other places in radius that you choose, based on your location.</p>
+                    <p>- The app is in the testing phase, created in educational purpose.</p>
+                    <p>- Programming and markup languages used to create this app:</p>
+                    <div id="languages">
+                        <div class="imgWrap"><img src="images/lang-icons/HTML5_Logo.png" alt="html icon"></div>
+                        <div class="imgWrap"><img src="images/lang-icons/css3logo.png" alt="css icon"></div>
+                        <div class="imgWrap"><img src="images/lang-icons/sass.png" alt="sass icon"></div>
+                        <div class="imgWrap"><img src="images/lang-icons/js.png" alt="js icon"></div>
+                    </div>
+                </div>
+                <div id="section-2">
+                    <img id="gpsImg" src="images/gps-and-location.png" alt="mobile phone img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div id="footer-nav">
+            <a href="index.html#main">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p id="copy">Copyright©2017 Vukovic Branko.All rights reserved.Designed By Vukovic Branko.</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaMfxx125qpDcCXkY96DgEHsZTVPVKnY8" async defer></script>
+    <script src="javascripts/about.js"></script>
+</body>
+
+</html>

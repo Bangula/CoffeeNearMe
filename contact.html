@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Emisia project - Abote page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="near, me, places, nearme, coffee, restaurant, hotel, gas, station">
+    <meta name="description" content="Coffee near me">
+    <meta name="author" content="Vukovic Branko">
+    <link type="text/css" rel="stylesheet" href="stylesheets/style.css">
+
+
+</head>
+
+<body>
+
+    <div id="wraper">
+        <div id="loader"></div>
+    </div>
+
+    <img id="toTop" src="images/back_on_top.png" alt="backtotop image" onclick="backToTop()" title="Back to top!">
+
+    <div id="main-contact" class="main">
+        <header>
+            
+            <img id="navButton" src="images/side-menu.png" alt="responsive menu icon">
+            <div id="logo">
+                <a href="index.html">
+                    <h1>CoffeeNearMe</h1>
+                </a>
+                <img src="images/coffee-cup-md.png" alt="coffee cup">
+            </div>
+
+            <nav>
+                <div id="nw1"><a id="a1" href="index.html#main" onmouseover="navWrapOver(event)" onmouseout="navWrapOut(event)">Home</a></div>
+                <div id="nw2"><a id="a2" href="about.html" onmouseover="navWrapOver(event)" onmouseout="navWrapOut(event)">About</a></div>
+                <div id="nw3" class="active"><a id="a3" href="contact.html" onmouseover="navWrapOver(event)" onmouseout="navWrapOut(event)">Contact</a></div>
+            </nav>
+        </header>
+        
+        <div id="respNav">
+            <a href="index.html#main">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        
+        <div id="info">
+               
+            <p id="adress">Address:<br>Kraljevackog Bataljona 241/6<br> Kragujevac, Serbia</p>
+            <p id="phone">Phone:<br>+381616163095</p>
+            <p id="email">E-mail:<br>bvukovic082@gmail.com</p>
+            <a id="portfolio" href="https://bangula.github.io/">Visite my Portfolio!</a>
+            <div id="social">
+                <a href="https://www.facebook.com/banebangula" id="href"><img src="images/social-icons/facebook_circle.png" alt="social icon"></a>
+                <a href="https://www.facebook.com/banebangula" id="href"><img src="images/social-icons/tweetr.png" alt="social icon"></a>
+                <a href="https://www.facebook.com/banebangula" id="href"><img src="images/social-icons/Instagram_icon.png" alt="social icon"></a>
+                <a href="https://www.facebook.com/banebangula" id="href"><img src="images/social-icons/YouTube-icon.png" alt="social icon"></a>
+            </div>
+        </div>
+        
+        <div id="form">
+            <form action="https://formspree.io/bvukovic082@gmail.com" method="POST">
+                <input type="text" placeholder="Your Name" name="name"><br>
+                <input type="email" placeholder="Your Email" name="email"><br>
+                <textarea name="message" placeholder="Send us a message..."></textarea><br>
+                <input id="submit" type="submit" value="Send!">
+            </form>
+        </div>
+        <h2 id="contactUs">Feel free to contact us at any time.</h2>
+    </div>
+
+    <div id="map2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45906.976492815455!2d20.871727033040347!3d44.01755009989038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475720dbdee00fd9%3A0xdfa77784524b968!2sKragujevac!5e0!3m2!1sen!2srs!4v1514051779627" width="1200" height="500" frameborder="0" style="border:0; width: 100%" allowfullscreen></iframe>
+    </div>
+
+    <footer id="footer">
+        <div id="footer-nav">
+            <a href="index.html#main">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p id="copy">Copyright©2017 Vukovic Branko.All rights reserved.Designed By Vukovic Branko.</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaMfxx125qpDcCXkY96DgEHsZTVPVKnY8" async defer></script>
+    <script src="javascripts/contact.js"></script>
+</body>
+
+</html>
